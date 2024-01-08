@@ -3,6 +3,7 @@ package project
 object versions {
     const val ktx = "1.12.0"
     const val lifecycle_runtime = "2.6.2"
+    const val coroutines = "1.7.3"
     const val compose_activity = "1.8.2"
     const val compose_bom = "2023.08.00"
     const val junit = "4.13.2"

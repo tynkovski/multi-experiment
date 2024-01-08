@@ -1,3 +1,4 @@
+import ext.implementation
 import plugins.LibGradlePlugin
 import project.bundles
 import project.versions
@@ -24,4 +25,7 @@ dependencies {
     bundles.test
     bundles.compose
     bundles.espresso
+
+    implementation(project(":core:repository"))
+
 }

@@ -22,3 +22,6 @@ include(":app")
 
 // feature modules
 include(":feature")
+
+// core modules
+include(":core:repository")

@@ -4,6 +4,8 @@ object libs {
     const val ktx       = "androidx.core:core-ktx:${versions.ktx}"
     const val lifecycle = "androidx.lifecycle:lifecycle-runtime-ktx:${versions.lifecycle_runtime}"
 
+    const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${versions.coroutines}"
+
     const val compose_activity           = "androidx.activity:activity-compose:${versions.compose_activity}"
     const val compose_bom                = "androidx.compose:compose-bom:${versions.compose_bom}"
     const val compose_ui                 = "androidx.compose.ui:ui"
