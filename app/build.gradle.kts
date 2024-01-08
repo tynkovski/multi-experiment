@@ -1,3 +1,4 @@
+import ext.implementation
 import plugins.AppGradlePlugin
 import project.bundles
 
@@ -17,4 +18,6 @@ dependencies {
     bundles.test
     bundles.compose
     bundles.espresso
+
+    implementation(project(":feature"))
 }

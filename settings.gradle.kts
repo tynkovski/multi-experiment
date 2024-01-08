@@ -16,4 +16,9 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "multi-experiment"
+
+// app modules
 include(":app")
+
+// feature modules
+include(":feature")

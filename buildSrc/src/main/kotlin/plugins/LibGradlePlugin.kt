@@ -3,6 +3,7 @@ package plugins
 import com.android.build.gradle.LibraryExtension
 import project.config
 import org.gradle.api.Project
+import project.versions
 
 class LibGradlePlugin : GradlePlugin() {
     override fun applyPlugins(project: Project) = project.apply {
