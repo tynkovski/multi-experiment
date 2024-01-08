@@ -1,7 +1,5 @@
-import ext.implementation
 import plugins.LibGradlePlugin
-import project.bundles
-import project.versions
+import project.config
 
 plugins {
     `android-library`
@@ -15,16 +13,21 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = versions.compose_compiler
+        kotlinCompilerExtensionVersion = config.composeCompiler
     }
 }
 
 dependencies {
-    bundles.ktx
-    bundles.lifecycle
-    bundles.test
-    bundles.compose
-    bundles.espresso
+
+    implementation(libs.ktx)
+    implementation(libs.lifecycle)
+    implementation(platform(libs.compose.bom))
+    implementation(libs.bundles.compose)
+
+    testImplementation(libs.junit)
+
+    androidTestImplementation(libs.junit.ext)
+    androidTestImplementation(libs.espresso)
 
     implementation(project(":core:repository"))
 

@@ -1,0 +1,40 @@
+[versions]
+agp = "8.2.0"
+ktx = "1.12.0"
+lifecycle = "2.6.2"
+coroutines = "1.7.3"
+compose-compiler = "1.5.7"
+compose-activity = "1.8.2"
+compose-bom = "2023.08.00"
+junit = "4.13.2"
+junit-ext = "1.1.5"
+espresso = "3.5.1"
+kotlin = "1.9.21"
+gradle = "8.1.1"
+
+[libraries]
+ktx = { group = "androidx.core", name = "core-ktx", version.ref = "ktx" }
+lifecycle = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "compose-activity" }
+compose = { group = "androidx.compose.ui", name = "ui" }
+compose-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+compose-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+compose-tooling_preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+compose-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+compose-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+junit-ext = { group = "androidx.test.ext", name = "junit", version.ref = "junit-ext" }
+espresso = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso" }
+
+kotlin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+gradle = { group = "com.android.tools.build", name = "gradle", version.ref = "gradle" }
+
+[bundles]
+compose = ["compose-activity", "compose", "compose-graphics", "compose-tooling", "compose-tooling_preview", "compose-material3"]
+
+[plugins]
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+androidApplication = { id = "com.android.application", version.ref = "agp" }

@@ -1,7 +1,6 @@
 package plugins
 
 import com.android.build.api.dsl.ApplicationExtension
-import project.versions
 import project.config
 import org.gradle.api.Project
 
@@ -36,7 +35,7 @@ class AppGradlePlugin : GradlePlugin() {
         }
 
         composeOptions {
-            kotlinCompilerExtensionVersion = versions.compose_compiler
+            kotlinCompilerExtensionVersion = config.composeCompiler
         }
 
         packaging {

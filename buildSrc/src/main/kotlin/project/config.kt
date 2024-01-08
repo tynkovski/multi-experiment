@@ -3,6 +3,7 @@ package project
 import org.gradle.api.JavaVersion
 
 object config {
+    const val composeCompiler = "1.5.7"
     const val compileSdk = 34
     const val minSdk = 33
     const val targetSdk = 34

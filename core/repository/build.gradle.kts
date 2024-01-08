@@ -1,9 +1,8 @@
 import plugins.LibGradlePlugin
-import project.bundles
 
 plugins {
-    id("com.android.library")
-    id("org.jetbrains.kotlin.android")
+    `android-library`
+    `kotlin-android`
 }
 
 android {
@@ -12,7 +11,7 @@ android {
 }
 
 dependencies {
-    bundles.ktx
-    bundles.test
-    bundles.coroutines
+    implementation(libs.ktx)
+    implementation(libs.coroutines)
+    testImplementation(libs.junit)
 }

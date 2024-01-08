@@ -3,3 +3,4 @@ buildscript {
         // for example classpath(bundles.hilt)
     }
 }
+true
