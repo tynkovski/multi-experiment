@@ -6,8 +6,10 @@ import org.gradle.api.Project
 
 class LibGradlePlugin : GradlePlugin() {
     override fun applyPlugins(project: Project) = project.apply {
-        // setup your plugins here
-        // for example plugin("something")
+         //plugin("org.jetbrains.kotlin.android")
+        // plugin("kotlin-kapt")
+        // plugin("dagger.hilt.android.plugin")
+        // plugin("org.jlleitschuh.gradle.ktlint")
     }
 
     override fun setConfig(project: Project) = project.android().apply {

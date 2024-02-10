@@ -27,10 +27,9 @@ dependencies {
     implementation(libs.bundles.compose)
 
     testImplementation(libs.junit)
-
     androidTestImplementation(libs.junit.ext)
     androidTestImplementation(libs.espresso)
 
-    // implementation(project(":core:repository"))
+    //implementation(project(":core:repository"))
     implementation(projects.core.repository)
 }

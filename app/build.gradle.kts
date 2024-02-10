@@ -41,7 +41,7 @@ android {
         }
     }
     kotlinOptions {
-        jvmTarget = "18"
+        jvmTarget = "19"
     }
     buildTypes {
         release {
@@ -61,7 +61,6 @@ dependencies {
     implementation(libs.bundles.compose)
 
     testImplementation(libs.junit)
-
     androidTestImplementation(libs.junit.ext)
     androidTestImplementation(libs.espresso)
 

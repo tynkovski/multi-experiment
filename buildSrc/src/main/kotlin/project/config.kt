@@ -11,5 +11,5 @@ object config {
     const val versionName = "1.0"
     const val applicationId = "com.tynkovski.multi_experiment"
     const val testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    val javaVersion = JavaVersion.VERSION_18
+    val javaVersion = JavaVersion.VERSION_19
 }

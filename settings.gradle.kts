@@ -1,9 +1,17 @@
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 pluginManagement {
     repositories {
         google()
         mavenCentral()
         gradlePluginPortal()
     }
+
+    // todo note how could use this
+    // plugins {
+    //     id("com.android.application")
+    //     id("org.jetbrains.kotlin.android")
+    // }
 }
 
 @Suppress("UnstableApiUsage")
