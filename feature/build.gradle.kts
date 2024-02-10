@@ -2,13 +2,14 @@ import plugins.LibGradlePlugin
 import project.config
 
 plugins {
-    `android-library`
-    `kotlin-android`
+    id("com.android.library")
+    id("org.jetbrains.kotlin.android")
 }
+
+apply<LibGradlePlugin>()
 
 android {
     namespace = "com.tynkovski.feature"
-    apply<LibGradlePlugin>()
     buildFeatures {
         compose = true
     }
@@ -22,6 +23,7 @@ dependencies {
     implementation(libs.ktx)
     implementation(libs.lifecycle)
     implementation(platform(libs.compose.bom))
+
     implementation(libs.bundles.compose)
 
     testImplementation(libs.junit)
@@ -29,6 +31,6 @@ dependencies {
     androidTestImplementation(libs.junit.ext)
     androidTestImplementation(libs.espresso)
 
-    implementation(project(":core:repository"))
-
+    // implementation(project(":core:repository"))
+    implementation(projects.core.repository)
 }

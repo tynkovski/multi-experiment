@@ -65,5 +65,6 @@ dependencies {
     androidTestImplementation(libs.junit.ext)
     androidTestImplementation(libs.espresso)
 
-    implementation(project(":feature"))
+    //implementation(project(":feature"))
+    implementation(projects.feature)
 }

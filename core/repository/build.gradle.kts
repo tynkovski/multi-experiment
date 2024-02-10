@@ -1,13 +1,14 @@
 import plugins.LibGradlePlugin
 
 plugins {
-    `android-library`
-    `kotlin-android`
+    id("com.android.library")
+    id("org.jetbrains.kotlin.android")
 }
+
+apply<LibGradlePlugin>()
 
 android {
     namespace = "com.tynkovski.repository"
-    apply<LibGradlePlugin>()
 }
 
 dependencies {

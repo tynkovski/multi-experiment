@@ -36,5 +36,6 @@ gradle = { group = "com.android.tools.build", name = "gradle", version.ref = "gr
 compose = ["compose-activity", "compose", "compose-graphics", "compose-tooling", "compose-tooling_preview", "compose-material3"]
 
 [plugins]
-kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-androidApplication = { id = "com.android.application", version.ref = "agp" }
+android-kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
